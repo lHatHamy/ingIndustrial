@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./grid.css">
+  <title>Portal Departamento Industrial</title>
+  <style>
+    
+.cards-section {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 columnas */
+  gap: 20px;
+  margin: 60px auto;
+  padding: 0 40px;
+  max-width: 1200px;
+}
+
+.card-img {
+  position: relative;
+  display: block;
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+.card-img img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.3s ease, filter 0.3s ease;
+  filter: brightness(0.7); /* leve oscurecimiento */
+}
+
+.card-img span {
+  position: absolute;
+  bottom: 15px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #fff;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  text-shadow: 2px 2px 5px rgba(0,0,0,0.7);
+  font-family: 'Bebas Neue', cursive;
+  letter-spacing: 1px;
+}
+
+/* Hover con zoom y más luz */
+.card-img:hover img {
+  transform: scale(1.05);
+  filter: brightness(0.9);
+}
+  </style>
+</head>
+<body>
+
+<header class="header-small">
+  <div class="menu container">
+    <!-- Logo principal -->
+    <a href="index.html" class="logo">
+      <img src="images/Logo.png" alt="Logo">
+    </a>
+
+    <!-- Botón menú móvil -->
+    <input type="checkbox" id="menu" />
+    <label for="menu">
+      <img src="images/menu.svg" class="menu-icon" alt="Menú">
+    </label>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+
+        <li class="dropdown">
+          <a href="#">1er - 5to Semestre</a>
+          <ul class="dropdown-menu">
+            <li><a href="idiomas.html">Idiomas</a></li>
+            <li><a href="Becas.html">Becas</a></li>
+            <li><a href="act_compl.html">Actividades complementarias</a></li>
+          </ul>
+        </li>
+
+        <li class="dropdown">
+          <a href="#">6to - 8vo Semestre</a>
+          <ul class="dropdown-menu">
+            <li><a href="servicio.html">Servicio social</a></li>
+            <li><a href="CuryCer.html">Cursos y certificaciones</a></li>
+            <li><a href="Actividades_adicionales.html">Actividades adicionales</a></li>
+          </ul>
+        </li>
+
+        <li class="dropdown">
+          <a href="#">9no y egresados</a>
+          <ul class="dropdown-menu">
+            <li><a href="Residencia.html">Residencia</a></li>
+            <li><a href="Titulacion.html">Titulación</a></li>
+            <li><a href="Capitulos_estudiantes.html">Capítulos estudiantes</a></li>
+          </ul>
+        </li>
+
+        <li><a href="Casos_de_exito.html">Casos de éxito</a></li>
+        <li><a href="#">Bolsa de trabajo</a></li>
+      </ul>
+    </nav>
+
+    <!-- Redes sociales -->
+            <div class="socials-1">
+                <a href="https://www.facebook.com/p/TecNM-Pachuca-61557528505129/?locale=es_LA"><img src="images/r1.png" alt=""></a>
+                <a href="#"><img src="images/r2.png" alt=""></a>
+                <a href="#"><img src="images/r5.png" alt=""></a>
+            </div>
+  </div>
+</header>
+
+    <!-- Bienvenida con video -->
+    <div class="information-2">
+      <div class="information-content">
+        <h2 >Actividades complementarias del instituto</h2>
+        <p>En el Instituto Tecnológico de Pachuca, las actividades complementarias son una oportunidad para crecer en lo académico, deportivo, cultural
+          y personal. Además de ser parte de tu formación integral, estas actividades te ayudarán a juntar los créditos necesarios que te permitan continuar
+        con etapas clave de tu carrera como el servicio social y la residencia profesional.</p>
+
+        <a href="https://itp.itpachuca.edu.mx/extraescolares_itpachuca">click para visitar la página oficial ITP</a>
+        <div class="info-img">
+          <img src="images/actividades.jpg">
+        </div>
+      </div>
+    </div>
+  </header>
+
+<!-- SECCIÓN ACTIVIDADES -->
+<section class="about" id="actividades">
+  <div class="about-content">
+    <h2 >Actividades Complementarias</h2>
+    <div class="cards-section">
+
+      <!-- 1 -->
+      <div class="card">
+        <img src="images/unnamed.jpg" alt="Escolta y Banda de Guerra">
+        <h3>Escolta y Banda de Guerra</h3>
+        <p>Representa a la institución con disciplina y orgullo.</p>
+        <a href="https://itp.itpachuca.edu.mx/extraescolares_itpachuca/info_extraescolares/extraescolar_banda_de_guerra.php" class="card-btn">Ver más</a>
+      </div>
+
+      <!-- 2 -->
+      <div class="card">
+        <img src="images/baile.jpg" alt="Baile Moderno">
+        <h3>Baile Moderno</h3>
+        <p>Expresa tu creatividad a través del movimiento y la música.</p>
+        <a href="https://itp.itpachuca.edu.mx/extraescolares_itpachuca/info_extraescolares/extraescolar_baile_moderno.php" class="card-btn">Ver más</a>
+      </div>
+
+      <!-- 3 -->
+      <div class="card">
+        <img src="images/Cine.jpg" alt="Cine Club">
+        <h3>Cine Club</h3>
+        <p>Descubre, analiza y disfruta del séptimo arte con tus compañeros.</p>
+        <a href="https://itp.itpachuca.edu.mx/extraescolares_itpachuca/info_extraescolares/extraescolar_cine_club.php" class="card-btn">Ver más</a>
+      </div>
+
+      <!-- 4 -->
+      <div class="card">
+        <img src="images/Grupo-de-Danza-Folklórica.jpg" alt="Danza Folklórica">
+        <h3>Danza Folklórica</h3>
+        <p>Preserva nuestras tradiciones con música y baile regional.</p>
+        <a href="https://itp.itpachuca.edu.mx/extraescolares_itpachuca/info_extraescolares/extraescolar_danza_folklorica.php" class="card-btn">Ver más</a>
+      </div>
+
+      <!-- 5 -->
+      <div class="card">
+        <img src="images/fotografia.jpg" alt="Fotografía">
+        <h3>Fotografía</h3>
+        <p>Captura momentos únicos y desarrolla tu creatividad visual.</p>
+        <a href="https://itp.itpachuca.edu.mx/extraescolares_itpachuca/info_extraescolares/extraescolar_fotografia.php" class="card-btn">Ver más</a>
+      </div>
+
+      <!-- 6 -->
+      <div class="card">
+        <img src="images/digital.jpg" alt="Ilustración Digital">
+        <h3>Ilustración Digital</h3>
+        <p>Aprende a expresar tus ideas con herramientas tecnológicas.</p>
+        <a href="https://itp.itpachuca.edu.mx/extraescolares_itpachuca/info_extraescolares/extraescolar_ilustracion_digital.php" class="card-btn">Ver más</a>
+      </div>
+
+      <!-- 7 -->
+      <div class="card">
+        <img src="images/musica.jpg" alt="Música">
+        <h3>Música</h3>
+        <p>Forma parte de grupos musicales y comparte tu talento.</p>
+        <a href="https://itp.itpachuca.edu.mx/extraescolares_itpachuca/info_extraescolares/extraescolar_musica.php" class="card-btn">Ver más</a>
+      </div>
+
+      <!-- 8 -->
+      <div class="card">
+        <img src="images/pintura.jpg" alt="Pintura y Dibujo">
+        <h3>Pintura y Dibujo</h3>
+        <p>Explora el arte visual con técnicas tradicionales y modernas.</p>
+        <a href="https://itp.itpachuca.edu.mx/extraescolares_itpachuca/info_extraescolares/extraescolar_pintura_dibujo.php" class="card-btn">Ver más</a>
+      </div>
+
+      <!-- 9 -->
+      <div class="card">
+        <img src="images/teatro.jpg" alt="Teatro">
+        <h3>Teatro</h3>
+        <p>Desarrolla tus habilidades escénicas y de expresión corporal.</p>
+        <a href="https://itp.itpachuca.edu.mx/extraescolares_itpachuca/info_extraescolares/extraescolar_teatro.php" class="card-btn">Ver más</a>
+      </div>
+
+      <!-- 10 -->
+      <div class="card">
+        <img src="images/Ajedrez.jpg" alt="Ajedrez">
+        <h3>Ajedrez</h3>
+        <p>Ejercita tu mente con estrategias y partidas desafiantes.</p>
+        <a href="https://itp.itpachuca.edu.mx/extraescolares_itpachuca/info_extraescolares/extraescolar_ajedrez.php" class="card-btn">Ver más</a>
+      </div>
+
+      <!-- 11 -->
+      <div class="card">
+        <img src="images/atle.jpg" alt="Atletismo">
+        <h3>Atletismo</h3>
+        <p>Compite y mejora tu rendimiento físico en diferentes pruebas.</p>
+        <a href="https://itp.itpachuca.edu.mx/extraescolares_itpachuca/info_extraescolares/extraescolar_atletismo.php" class="card-btn">Ver más</a>
+      </div>
+
+      <!-- 12 -->
+      <div class="card">
+        <img src="images/basquet.jpg" alt="Básquetbol">
+        <h3>Básquetbol</h3>
+        <p>Forma parte del equipo y participa en torneos representativos.</p>
+        <a href="https://itp.itpachuca.edu.mx/extraescolares_itpachuca/info_extraescolares/extraescolar_basquetbol.php" class="card-btn">Ver más</a>
+      </div>
+
+      <!-- 13 -->
+      <div class="card">
+        <img src="images/Beisbol_29.jpg" alt="Béisbol">
+        <h3>Béisbol</h3>
+        <p>Disfruta de uno de los deportes más tradicionales y competitivos.</p>
+        <a href="https://itp.itpachuca.edu.mx/extraescolares_itpachuca/info_extraescolares/extraescolar_beisbol.php" class="card-btn">Ver más</a>
+      </div>
+
+      <!-- 14 -->
+      <div class="card">
+        <img src="images/soft.jpg" alt="Sóftbol">
+        <h3>Sóftbol</h3>
+        <p>Practica este emocionante deporte en equipo.</p>
+        <a href="https://itp.itpachuca.edu.mx/extraescolares_itpachuca/info_extraescolares/extraescolar_softbol.php" class="card-btn">Ver más</a>
+      </div>
+
+      <!-- 15 -->
+      <div class="card">
+        <img src="images/femenino.jpg" alt="Fútbol Femenil">
+        <h3>Fútbol Femenil</h3>
+        <p>Vive la pasión del fútbol en un ambiente de competencia sana.</p>
+        <a href="https://itp.itpachuca.edu.mx/extraescolares_itpachuca/info_extraescolares/extraescolar_futbol_femenil.php" class="card-btn">Ver más</a>
+      </div>
+
+      <!-- 16 -->
+      <div class="card">
+        <img src="images/futbol.jpg" alt="Fútbol">
+        <h3>Fútbol</h3>
+        <p>Únete al equipo de fútbol y representa a tu institución.</p>
+        <a href="https://itp.itpachuca.edu.mx/extraescolares_itpachuca/info_extraescolares/extraescolar_futbol.php" class="card-btn">Ver más</a>
+      </div>
+
+      <!-- 17 -->
+      <div class="card">
+        <img src="images/Volei.jpg" alt="Voleibol">
+        <h3>Voleibol</h3>
+        <p>Disfruta del voleibol en equipos dinámicos y competitivos.</p>
+        <a href="https://itp.itpachuca.edu.mx/extraescolares_itpachuca/info_extraescolares/extraescolar_voleibol.php" class="card-btn">Ver más</a>
+      </div>
+
+      <!-- 18 -->
+      <div class="card">
+        <img src="images/taekwondo-kick-vector.jpg" alt="Tae Kwon Do">
+        <h3>Tae Kwon Do</h3>
+        <p>Entrena disciplina, fuerza y técnica en este arte marcial.</p>
+        <a href="https://itp.itpachuca.edu.mx/extraescolares_itpachuca/info_extraescolares/extraescolar_taekwondo.php" class="card-btn">Ver más</a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+  <!-- CURSOS MOOC -->
+  <section class="information-2">
+    <h2>Cursos MOOC</h2>
+    <p>
+      Los MOOC son cursos en línea gratuitos y abiertos para la comunidad TecNM y el público en general.
+      Al finalizar, podrás descargar tu constancia sin costo alguno.
+    </p>
+    <div class="info-img">
+      <a href="https://mooc.tecnm.mx">
+        <img src="images/MOOC.png" alt="MOOC">
+      </a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-links">
+        <div class="link-img">
+          <img src="images/Logo.png" alt="Logo del Departamento Industrial">
+          <div class="socials-2">
+            <a href="#"><img src="images/r1.png" alt="Facebook"></a>
+            <a href="#"><img src="images/r2.png" alt="Twitter"></a>
+            <a href="#"><img src="images/r5.png" alt="YouTube"></a>
+            <a href="#"><img src="images/r4.jpg" alt="LinkedIn"></a>
+          </div>
+        </div>
+
+        <div class="link">
+          <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="CuryCer.html">Cursos</a></li>
+            <li><a href="Becas.html">Becas</a></li>
+          </ul>
+        </div>
+        
+        <div class="link">
+          <h3>Recursos</h3>
+          <ul>
+            <li><a href="servicio.html">Servicio social</a></li>
+            <li><a href="Residencia.html">Residencias</a></li>
+            <li><a href="Titulacion.html">Titulación</a></li>
+          </ul>
+        </div>
+        
+        <div class="link">
+          <h3>Contacto</h3>
+          <ul>
+            <li><a href="mailto:industrial@itpachuca.edu.mx">Correo electrónico</a></li>
+            <li><a href="tel:+527711234567">Tel: (771) 123 4567</a></li>
+            <li><a href="#">Visítanos!</a></li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="footer-copy">
+        <p>© 2025 Departamento Industrial - Instituto Tecnológico de Pachuca. Todos los derechos reservados.</p>
+      </div>
+    </div>
+  </footer>
+
+
+</body>
+</html>
